@@ -1,0 +1,917 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #2C2B2B;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Rosario', sans-serif;
+    line-height: 90px;
+    font-size: 70px;
+}
+
+@font-face {
+ font-family: "DM Sans";
+ src: url("./fonts/DMSans-Regular.ttf") format("woff2"),
+        /*url("/fonts/OpenSans-Regular-webfont.woff") format("woff");*/
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrap {
+    width: 1440px;
+}
+
+.header {
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 66px 59px;
+}
+
+.menu-shopping {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    width: 373px; 
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.menu-list a {
+    color: #222;
+}
+
+.menu-list a:hover {
+    color: #09A66D;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 56px;
+    height: 56px;
+    background-image: url("../img/planet-earth.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+}
+
+.search img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: transform .2s;
+}
+
+.search img:hover {
+    transform: scale(1.1, 1.1);
+    width: 23px;
+    height: 23px;
+}
+
+.shopping-cart {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    margin-left: 32px;
+}
+
+.shopping-cart img {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    transition: transform .2s;
+}
+
+.shopping-cart img:hover {
+    transform: scale(1.1, 1.1);
+    width: 23px;
+    height: 23px;
+}
+
+.registration-bottom {
+    width: 260px;
+    height: 40px;
+    background-color: #09A66D;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.registration-bottom:hover {
+    background-color: #038a24;
+}
+
+
+/*====================== decor ==========================*/
+
+main {
+    position: relative;
+    z-index: 99;
+}
+
+.decor {
+    height: 850px;
+    background-color: #F3FBF8;
+    background-image: url("../img/fresh-melientha-suavis-pierre-leaves-white-surface.png");
+    background-repeat: no-repeat;
+    background-position-x: -57px;
+    background-position-y: -41px;
+    background-size: 612px 412px;
+}
+
+.decor-text {
+    margin: 0 auto;
+    width: 930px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.decor-text h1 {
+    margin: 93px 20px;
+}
+
+
+.text-order {
+    width: 194px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.head-description {
+    width: 637px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.text-order a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #09A66D;
+}
+
+.text-order a:hover {
+    background-color: #038a24;
+}
+
+.benefits {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits-picture {
+    width: 862px;
+    height: 465px;
+    background-image: url("../img/vegetables-fruits-white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 120px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.benefits-boxes {
+    /*height: 408px;*/
+    margin-right: 100px;
+    position: absolute;
+    top: -40px;
+    right: 15px;
+}
+
+.icon-user-icon {
+    position: absolute;
+}
+
+.icon-user {
+    position: absolute;
+    top: 44px;
+    left: 48px;
+    font-size: 28px;
+}
+
+.item-icon {
+    position: relative;
+}
+
+.icon-fruit {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    font-size: 28px;
+}
+
+.box {
+    width: 250px;
+    height: 116px;
+    background-color: #fff;
+    padding: 0 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+.box:last-child {
+    margin-bottom: 0;
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+}
+
+.review-icon {
+    position: relative;
+}
+
+.review-icon img {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+/*=============================== best ========================*/
+
+.why-best {
+    position: relative;
+}
+
+.best-box {
+    width: 500px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 19px 100px;
+    padding: 40px 59px;
+}
+
+.best-box:nth-child(even) {
+    background-color: #F3FBF8;
+}
+
+.best-top h2 {
+    margin: 140px 0 20px 100px;
+}
+
+.best-top p {
+    width: 637px;
+    height: 90px;
+    margin: 0 0 56px 100px;
+    overflow: hidden;
+}
+
+.best-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best-content-wrap {
+    width: 45%;
+}
+
+.best-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.icon-delivery-man {
+    position: absolute;
+    top: 18px;
+    left: 23px;
+    font-size: 36px;
+}
+
+.icon-shopping {
+    position: absolute;
+    top: 21px;
+    left: 23px;
+    font-size: 36px;
+}
+
+.icon-service-icon {
+    position: absolute;
+    top: 21px;
+    left: 17px;
+    font-size: 36px;
+}
+
+.fasted, .service {
+    background-color: #F3FBF8;
+}
+
+.online {
+    background-color: #fff;
+}
+
+.box-text {
+    width: 277px;
+}
+
+.arrow-down {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 146px 341px;
+}
+
+.arrow-down:hover {
+    background-color: #F3FBF8;
+    border-radius: 50%;
+}
+
+.best-picture {
+    width: 45%;
+    height: 600px;
+    margin: 0 100px 146px;
+    background-image: url(../img/delivery-food-package-grocery-order.png),
+    url(../img/fruits-men-background.svg);
+    background-repeat: no-repeat no-repeat;
+    background-position: top center;
+    background-size: contain contain;
+}
+
+.background-crossed {
+    width: 944px;
+    height: 531px;
+    background-image: url(../img/crossed.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -173px;
+    left: 461px;
+    z-index: -1;
+}
+
+
+/*========================== explore ==============================*/
+
+.explore {
+    height: 832px;
+    padding: 88px 50px 0 100px;
+    background-color: #F3FBF8;
+}
+
+.explore-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.explore-picture {
+    width: 600px;
+    height: 600px;
+    background-image: url(../img/fruits-vegetables.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.explore-text {
+    width: 582px;
+    z-index: 1;
+}
+
+.explore-header {
+    margin-bottom: 20px;
+}
+
+.explore-description {
+    margin-bottom: 50px;
+}
+
+.explore-now {
+    width: 194px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.explore-now a {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #09A66D;
+}
+
+.explore-now a:hover {
+    background-color: #038a24;
+}
+
+.explore-bg {
+    width: 413px;
+    height: 397px;
+    background-image: url("../img/fresh-melientha-suavis-pierre-leaves-white-surface.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: -140px;
+    right: 15px;
+    object-fit: contain;
+}
+
+.icon-arrow-white {
+    position: absolute;
+    top: 3px;
+    left: 126px;
+    z-index: 3;
+}
+
+/*===================== comments ===========================*/
+
+.comments {
+    padding: 96px 100px 0;
+}
+
+.comments-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-text h4 {
+    width: 640px;
+    margin-bottom: 30px;
+}
+
+.comments-text p {
+    width: 586px;
+    margin-bottom: 40px;
+}
+
+.comments-bottom {
+    width: 465px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments-bottom-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-bottom-content {
+    margin-right: 124px;
+}
+
+.comments-name {
+    font-weight: bold;
+}
+
+.comments-pagination {
+    width: 138px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagination-left {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.pagination-left:hover {
+    background-color: #555;
+}
+
+.pagination-right {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #09A66D;
+}
+
+.pagination-right:hover {
+    background-color: #555;
+}
+
+.icon-arrow-left {
+    position: absolute;
+    top: 17px;
+    right: 22px;
+}
+
+.icon-arrow-right {
+    position: absolute;
+    top: 17px;
+    right: 22px;
+}
+
+.comments-picture {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+    background-image: url(../img/bohemian-man-with-his-arms-crossed.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    
+}
+
+.commentators {
+    padding: 11px 0 11px 21px;
+    width: 220px;
+    height: 80px;
+    border-radius: 15px;
+    background-color: #fff;
+    -webkit-box-shadow: -20px 20px 21px 0px rgba(243,251,248,1);
+-moz-box-shadow: -20px 20px 21px 0px rgba(243,251,248,1);
+box-shadow: -20px 20px 21px 0px rgba(243,251,248,1);
+    position: absolute;
+    top: 395px;
+    left: -7px;
+}
+
+.comments-stars {
+    width: 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commentators-list {
+    position: relative;
+}
+
+.commentators-list img {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    object-fit: cont;
+}
+
+.commentator1 {
+    top: 0;
+    left: 0;
+}
+
+.commentator2 {
+    top: 0;
+    left: 24px;
+    z-index: 1;
+}
+
+.commentator3 {
+    top: 0;
+    left: 44px;
+    z-index: 2;
+}
+
+.commentator4 {
+    top: 0;
+    left: 64px;
+    z-index: 3;
+}
+
+.commentator5 {
+    top: 0;
+    left: 84px;
+    z-index: 4;
+}
+
+.commentator6 {
+    top: 0;
+    left: 104px;
+    z-index: 5;
+}
+
+.commentator7 {
+    top: 0;
+    left: 124px;
+    z-index: 6;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #F3FBF8;
+}
+
+.commentators-stars img {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.commentators-stars img:last-child {
+    width: 17px;
+    height: 15px;
+}
+
+.icon-plus {
+    position: relative;
+    top: 5px;
+    left: 7px;
+}
+
+/*======================= waytoorder =======================*/
+
+.waytoorder {
+    padding: 150px 200px 140px;
+}
+
+.waytoorder-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.waytoorder-picture {
+    width: 266px;
+    height: 496px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.picture-iphone5278 {
+    width: 208px;
+    height: 432px;
+    background-image: url(../img/iphone5278.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.picture-iphone5280 {
+    width: 240px;
+    height: 496px;
+    background-image: url(../img/iphone5280.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 24px;
+}
+
+.waytoorder-text {
+    width: 662px;
+}
+
+.waytoorder-text h5 {
+    margin-bottom: 20px;
+}
+
+.waytoorder-text p {
+    width: 574px;
+    margin-bottom: 50px;
+}
+
+.downloadapp {
+    width: 170px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #F3FBF8;
+    color: #333;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloadapp:hover {
+    background-color: #09A66D;
+}
+
+.waytoorder-bottom {
+    width: 232px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appstore {
+    width: 104px;
+    height: 30px;
+    background-image: url(../img/appstore.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.google {
+    width: 104px;
+    height: 30px;
+    background-image: url(../img/googleplay.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/*============================ footer =========================*/
+
+.footer-content {
+    min-height: 435px;
+    background-color: #FCFEFD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 66px 100px 118px;
+}
+
+.footer-left {
+    width: 345px;
+}
+
+.foot-icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/planet-earth.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.foot-text {
+    color: #555;
+}
+
+.footer-navigation, .resources {
+    max-width: 122px;
+}
+
+.footer-header {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 105px 0 40px;
+}
+
+.footer-list li {
+    margin-bottom: 25px;
+    
+}
+
+.footer-list a {
+    color: #555;
+}
+
+.contact {
+    max-width: 222px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-list {
+    margin-bottom: 20px;
+}
+
+.contact-list li {
+    margin-bottom: 25px;
+    text-transform: none;
+}
+
+.media {
+    width: 172px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media li {
+    width: 12px;
+    height: 24px;
+    
+}
+
+.media a {
+    color: #555;
+}
+
+.bottom-free {
+    display: none;
+}
+
+/*=============================*/
+
+
+.logo {
+    -webkit-animation: rotate-90-cw 9.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
+            animation: rotate-90-cw 9.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 6s both;
+            animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+
+    100% {
+   -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg); 
+  }
+
+}
+
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+
+  100% {
+   -webkit-transform: rotate(-5deg);
+            transform: rotate(-25deg); 
+  }
+}
+
+/*=========== h1-h5 animation ============*/
+
+.element-animation {
+  
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
